@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&display=swap');
+:root
+{
+    --success-color:#2ecc71;
+    --error-color:#e74c3c;
+}
+
+*{
+    box-sizing: border-box;
+}
+body
+{   background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+}
+
+.container
+{
+    background-color: #fff;
+    border-radius: 5px;
+    padding:30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.field-title
+{
+    margin-bottom: 10px;
+}
+.form h1
+{
+  text-align: center;
+  margin-bottom:10px;
+  margin-top:0px;
+  color: rgb(3, 29, 36);
+}
+
+.field small
+{
+    display:block;
+    visibility: hidden;
+    color:var(--error-color);
+    font-size: small;
+}
+
+.field.error small
+{
+    visibility: visible;
+}
+
+.field input
+{   outline: none;
+    width:100%;
+    display: block;
+    padding:5px;
+    font-size: 15px;
+    border:2px solid rgb(179, 177, 177);  
+    border-radius: 6px;
+    background-color: rgba(227, 247, 250, 0.918);
+}
+.field input:focus
+{   
+   
+   background-color: white;
+   border:2px solid rgb(105, 99, 99);
+   border-radius: 6px;
+  border-color: rgb(82, 82, 74);
+}
+.field.success input
+{  
+    border-color: var(--success-color);
+}
+.field.error input
+{  
+    border-color: var(--error-color);
+}
+.field-title
+{
+    display:block;
+    margin-bottom: 5px;
+}
+
+.form button
+{
+    width:100%;
+    padding:10px;
+    display: block;
+    background-color: lightseagreen;
+    border-radius: 6px;
+    border:2px solid lightseagreen;
+    font-size: 16px;
+    color:white;
+    cursor: pointer;
+    margin-top: 5px;
+}
